@@ -1,8 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
-import Footer from "../pages/Home/Home/Shared/Footer/Footer";
-import Header from "../pages/Home/Home/Shared/Header/Header";
-import LeftNav from "../pages/Home/Home/Shared/LeftNav/LeftNav";
-import RightNav from "../pages/Home/Home/Shared/RightNav/RightNav";
+import Footer from "../pages/Shared/Footer/Footer";
+import Header from "../pages/Shared/Header/Header";
+import LeftNav from "../pages/Shared/LeftNav/LeftNav";
+import RightNav from "../pages/Shared/RightNav/RightNav";
 
 const Main = () => {
     return (
