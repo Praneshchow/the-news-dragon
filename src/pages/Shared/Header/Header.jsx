@@ -5,8 +5,8 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
     return (
-        <Container>
-            <div>
+        <Container className='mt-4'>
+            <div className='text-center'>
                 <img src={logo} alt="" />
                 <p className='text-secondary'><small>Jonrnalizm without fear or favor. </small></p>
                 <p>{moment().format("dddd, MMMM D, YYYY")}</p>

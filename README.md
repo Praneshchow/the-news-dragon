@@ -4,7 +4,7 @@
 
 Npm install:    `npm install react-router-dom localforage match-sorter sort-by`
 
-Run in live site:   `npm run dev`
+Run live site:   `npm run dev`
 
 Install firebase:   `npm install firebase`
 
@@ -17,5 +17,7 @@ React Fast Marquee (news text animations to smooth marquees): `npm install react
 Link: https://momentjs.com/
 
 Install moment.js : `npm install moment`
+
+I call the API data from the server (the-news-dragon-server). 
 
 
