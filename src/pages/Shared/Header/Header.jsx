@@ -8,7 +8,7 @@ const Header = () => {
         <Container className='mt-4'>
             <div className='text-center'>
                 <img src={logo} alt="" />
-                <p className='text-secondary'><small>Jonrnalizm without fear or favor. </small></p>
+                <p className='text-secondary mt-4'><small>Jonrnalizm without fear or favor. </small></p>
                 <p>{moment().format("dddd, MMMM D, YYYY")}</p>
             </div>
 
@@ -20,7 +20,7 @@ const Header = () => {
                 </Marquee>
             </div>
 
-            <Navbar expand="lg" className="bg-body-tertiary">
+            <Navbar expand="lg" className="bg-body-tertiary mt-3 mb-3">
                 <Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -30,10 +30,10 @@ const Header = () => {
                             <Nav.Link href="#link">Career</Nav.Link>
                         </Nav>
 
-                        <Nav>
+                        <Nav className='align-items-center'>
                         <Nav.Link href="#link">Profile</Nav.Link>
                             <Nav.Link className="me-auto" href="#link">
-                                <Button variant="secondary">Login</Button>
+                                <Button variant="primary">Login</Button>
                             </Nav.Link>
                         </Nav>
 
