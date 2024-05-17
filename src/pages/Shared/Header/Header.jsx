@@ -16,7 +16,7 @@ const Header = () => {
                 <Button variant="danger">Latest</Button>
 
                 <Marquee className='text-danger' speed={50}>
-                    I can be a React component, multiple React components, or just some text.
+                Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...
                 </Marquee>
             </div>
 
