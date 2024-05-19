@@ -1,9 +1,10 @@
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import logo from '../../../assets/logo.png';
 import moment from 'moment';
 import Marquee from "react-fast-marquee";
 
 const Header = () => {
+
     return (
         <Container className='mt-4'>
             <div className='text-center'>
@@ -12,34 +13,13 @@ const Header = () => {
                 <p>{moment().format("dddd, MMMM D, YYYY")}</p>
             </div>
 
-            <div className='d-flex'>
+            <div className='d-flex bg-body-tertiary p-2'>
                 <Button variant="danger">Latest</Button>
 
                 <Marquee className='text-danger' speed={50}>
-                Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...
+                    Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...
                 </Marquee>
             </div>
-
-            <Navbar expand="lg" className="bg-body-tertiary mt-3 mb-3">
-                <Container>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">About</Nav.Link> 
-                            <Nav.Link href="#link">Career</Nav.Link>
-                        </Nav>
-
-                        <Nav className='align-items-center'>
-                        <Nav.Link href="#link">Profile</Nav.Link>
-                            <Nav.Link className="me-auto" href="#link">
-                                <Button variant="primary">Login</Button>
-                            </Nav.Link>
-                        </Nav>
-
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
         </Container>
     );
 };
