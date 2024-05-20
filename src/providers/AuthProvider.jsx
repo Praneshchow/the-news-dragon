@@ -8,20 +8,24 @@ const auth = getAuth(app);
 
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     // creating new user in Firebase. 
     const createUser = (email, password) => {
+        setLoading(true);           // when no user. 
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
     // signin.
     const signIn = (email, password) => {
+        setLoading(true);          // when no user. 
         return signInWithEmailAndPassword(auth, email, password);
     } 
     
     // sign out.
     const logOut = () => {
-        return signOut(auth);
+        setLoading(true);
+        return signOut(auth);          // when no user. 
     }
 
     // It mainly a observer. If a user login in our site, the state will be change. 
@@ -29,6 +33,7 @@ const AuthProvider = ({children}) => {
         const unsubscribe = onAuthStateChanged(auth, loggedUser => {
             console.log('logged in user inside auth state observer ', loggedUser);
             setUser(loggedUser);
+            setLoading(false);          // when user exist. 
         })
 
         // when it is done the it returns unsubscribe() function call. 
@@ -39,6 +44,7 @@ const AuthProvider = ({children}) => {
 
     const authInfo = {
         user,
+        loading,
         createUser,
         signIn, 
         logOut,

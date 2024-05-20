@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useContext } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -7,7 +8,9 @@ const Login = () => {
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();          // private route. 
     const location = useLocation(); 
-    // console.log("login page location: ", location);          
+    // console.log("login page location: ", location); 
+    
+    // location.state? is the optional chaining. 
     const from = location.state?.from?.pathname || '/category/0';         // if have the previous location. 
 
     const handleLogin = event => {
