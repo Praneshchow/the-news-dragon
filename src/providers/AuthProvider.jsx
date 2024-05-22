@@ -31,7 +31,7 @@ const AuthProvider = ({children}) => {
     // It mainly a observer. If a user login in our site, the state will be change. 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, loggedUser => {
-            console.log('logged in user inside auth state observer ', loggedUser);
+            // console.log('logged in user inside auth state observer ', loggedUser);
             setUser(loggedUser);
             setLoading(false);          // when user exist. 
         })
