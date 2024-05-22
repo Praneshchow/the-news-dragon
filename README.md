@@ -35,3 +35,21 @@ Link: https://github.com/remix-run/react-router/blob/main/examples/auth/src/App.
 4. Setup the private router. 
 5. Handle loading. 
 
+
+## Firebase Hosting
+Firbase init:   `firebase init`.
+
+```
+? Are you ready to proceed? Yes
+
+? What do you want to use as your public directory? dist
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? No
++  Wrote dist/index.html
++  Firebase initialization complete!
+
+C:\Users\Acer\OneDrive\Desktop\PROJECTS\the-news-dragon>npm run build
+```
+Then run this command: `firebase deploy`. 
+
+
