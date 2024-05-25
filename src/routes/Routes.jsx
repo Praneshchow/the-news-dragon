@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: ':id',
         element: <PrivateRoute><News></News></PrivateRoute>,
-        loader: ({params}) => fetch(`https://the-news-dragon-server-fnkpjylga-praneshs-projects-4fcd5d5b.vercel.app/news/${params.id}`)
+        loader: ({params}) => fetch(`https://the-news-dragon-server-mpzo.vercel.app/news/${params.id}`)
       }
     ]
   }

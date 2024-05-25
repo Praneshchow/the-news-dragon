@@ -35,6 +35,11 @@ Link: https://github.com/remix-run/react-router/blob/main/examples/auth/src/App.
 4. Setup the private router. 
 5. Handle loading. 
 
+</hr>
+
+## Dynamic title
+I created a hook for dynamic title. It is called custom hook. There is another way, we can use dynamic title. "React Helmet async" is used for dynamic title change of every webpage. 
+
 
 ## Firebase Hosting
 Firbase init:   `firebase init`.

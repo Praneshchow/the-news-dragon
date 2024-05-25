@@ -2,15 +2,18 @@ import { useContext, useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import useTitle from "../../../hooks/useTitle";
 
 const Register = () => {
     const { createUser } = useContext(AuthContext);
     const [accepted, setAccepted] = useState(false);
 
+    useTitle("Register")
+
     const handleRegister = event => {
         event.preventDefault();             // prevent the page loading. 
 
-        console.log(event.target.name.value);
+        // console.log(event.target.name.value);
         const form = event.target;
         const name = form.name.value;
         const email = form.email.value;
@@ -21,7 +24,7 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 const createdUser = result.user;
-                console.log(createdUser);
+                // console.log(createdUser);
             })
             .catch(error => {
                 console.log(error);
@@ -67,12 +70,6 @@ const Register = () => {
                 <br />
                 <Form.Text className="text-secondary">
                     Already have an Account? <Link to="/login">Login</Link>
-                </Form.Text>
-                <Form.Text className="text-success">
-                    Error
-                </Form.Text>
-                <Form.Text className="text-danger">
-                    Error
                 </Form.Text>
             </Form>
         </Container>

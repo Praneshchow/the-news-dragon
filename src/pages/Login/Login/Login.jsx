@@ -3,12 +3,15 @@ import { useContext } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import useTitle from "../../../hooks/useTitle";
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();          // private route. 
     const location = useLocation(); 
     // console.log("login page location: ", location); 
+
+    useTitle("Login");     // showing title.  
     
     // location.state? is the optional chaining. 
     const from = location.state?.from?.pathname || '/category/0';         // if have the previous location. 
@@ -54,12 +57,6 @@ const Login = () => {
                 <br />
                 <Form.Text className="text-secondary">
                     Don't have an Account? <Link to="/register">Register</Link>
-                </Form.Text>
-                <Form.Text className="text-success">
-                    Error
-                </Form.Text>
-                <Form.Text className="text-danger">
-                    Error
                 </Form.Text>
             </Form>
         </Container>
