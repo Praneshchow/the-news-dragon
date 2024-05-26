@@ -57,4 +57,13 @@ C:\Users\Acer\OneDrive\Desktop\PROJECTS\the-news-dragon>npm run build
 ```
 Then run this command: `firebase deploy`. 
 
+</hr>
+
+If I want to update the project. Just 2 steps to follow: build project, then again deploy it. 
+
+Build Project:      `npm run build`. 
+
+Firebase deployment:    `firebase deploy`.
+
+
 
