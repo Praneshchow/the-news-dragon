@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       {
         path: ':id',
         element: <Category></Category>,
-        loader: ({params}) => fetch(`https://the-news-dragon-server-mpzo.vercel.app/categories/${params.id}`)
+        loader: ({params}) => fetch(`https://the-news-dragon-server-zeta-gold.vercel.app/categories/${params.id}`)
       }
     ]
   },
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: ':id',
         element: <PrivateRoute><News></News></PrivateRoute>,
-        loader: ({params}) => fetch(`https://the-news-dragon-server-mpzo.vercel.app/news/${params.id}`)
+        loader: ({params}) => fetch(`https://the-news-dragon-server-zeta-gold.vercel.app/news/${params.id}`)
       }
     ]
   }
