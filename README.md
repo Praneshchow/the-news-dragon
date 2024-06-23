@@ -1,5 +1,19 @@
 # The Dragon News
 
+Backend Repository: https://github.com/Praneshchow/the-news-dragon-server
+
+## Tools and Technology 
+
+Frontend: React.js, React Router, Context API, CSS, Bootstrap, React Router Dom, Firebase. 
+
+Backend: Express.js, Node.js, Crud, Vercel. 
+
+## Features: 
+* User Login and Registration using Firebase.
+* News Category-based Filtering
+* Extendable Posts, routing path (Context API)
+* JSON API Server using Express.js
+
 ## Install:
 
 Npm install:    `npm install react-router-dom localforage match-sorter sort-by`
